@@ -25,7 +25,7 @@ jobs:
       - name: Install Source Han Serif SC
         run: |
           curl -L -o SourceHanSerifSC.zip https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/09_SourceHanSerifSC.zip
-          unzip SourceHanSerifSC.zip -d ~/.fontist/fonts
+          unzip -o SourceHanSerifSC.zip -d ~/.fontist/fonts
 
       - name: Convert Markdown to Typst and append to main.typ
         run: |
