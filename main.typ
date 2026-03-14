@@ -14,7 +14,7 @@
     set heading(
         numbering: numbly(
             "",
-            "T",
+            "",
             "{3:i}.",
         ),
     )
