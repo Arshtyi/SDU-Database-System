@@ -37,6 +37,11 @@ jobs:
               cat "experiment/$dir/$dir.typ" >> main.typ
             fi
           done
+          if [ -f "experiment/answer/answer.md" ]; then
+            pandoc "experiment/answer/answer.md" -o "experiment/answer/answer.typ"
+            echo "" >> main.typ
+            cat "experiment/answer/answer.typ" >> main.typ
+          fi
 
       - name: Setup Typst
         uses: typst-community/setup-typst@v4
